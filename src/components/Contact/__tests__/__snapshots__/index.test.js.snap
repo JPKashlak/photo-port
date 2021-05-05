@@ -3,7 +3,9 @@
 exports[`Contact component renders renders 1`] = `
 <DocumentFragment>
   <section>
-    <h1>
+    <h1
+      data-testid="h1tag"
+    >
       Contact me
     </h1>
     <form
@@ -25,7 +27,7 @@ exports[`Contact component renders renders 1`] = `
         <label
           for="email"
         >
-          Email Address:
+          Email address:
         </label>
         <input
           name="email"
@@ -40,11 +42,12 @@ exports[`Contact component renders renders 1`] = `
           Message:
         </label>
         <textarea
+          name="message"
           rows="5"
-          type="message"
         />
       </div>
       <button
+        data-testid="button"
         type="submit"
       >
         Submit
